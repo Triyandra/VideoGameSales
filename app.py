@@ -7,7 +7,7 @@ import plotly.express as px
 # --- Load dataset ---
 @st.cache_data
 def load_and_process_data():
-    df = pd.read_csv('vgsales.csv')
+    df = pd.read_csv('content/vgsales.csv')
     
     # Drop kolom tidak dipakai
     df_clean = df.drop(['Rank', 'Publisher'], axis=1)
